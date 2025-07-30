@@ -16,7 +16,7 @@ setup(
     description="S3X - Security Scanning and Exploitation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/s3x",
+    url="https://github.com/yfwmaniish/s3x",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",

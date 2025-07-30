@@ -22,7 +22,7 @@ S3X (Security Scanning and Exploitation) is a powerful and lightweight Python-ba
 1. Clone the repository:
 
 ```sh
-$ git clone https://github.com/yourusername/s3x.git
+$ git clone https://github.com/yfwmaniish/s3x.git
 $ cd s3x
 ```
 
