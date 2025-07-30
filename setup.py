@@ -9,14 +9,14 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="s3x-scanner",
+    name="vss-scanner",
     version="1.0.0",
     author="Decimal & Vectorindia1 by Team H4$HCR4CK",
     author_email="",
-    description="S3X - Security Scanning and Exploitation",
+    description="V$$ - Vulnerability Scanner & Security Suite",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yfwmaniish/s3x",
+    url="https://github.com/yfwmaniish/vss",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -37,7 +37,7 @@ setup(
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "s3x=s3x:main",
+            "vss=vss:main",
         ],
     },
     include_package_data=True,

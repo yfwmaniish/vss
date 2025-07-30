@@ -1,8 +1,8 @@
-# S3X - Security Scanning and Exploitation
+# V$$ - Vulnerability Scanner & Security Suite
 
 **Made by Decimal & Vectorindia1 by Team H4$HCR4CK**
 
-S3X (Security Scanning and Exploitation) is a powerful and lightweight Python-based security tool designed to detect and exploit common infrastructure misconfigurations.
+V$$ (Vulnerability Scanner & Security Suite) is a powerful and lightweight Python-based security tool designed to detect and exploit common infrastructure misconfigurations.
 
 ## Features
 
@@ -22,8 +22,8 @@ S3X (Security Scanning and Exploitation) is a powerful and lightweight Python-ba
 1. Clone the repository:
 
 ```sh
-$ git clone https://github.com/yfwmaniish/s3x.git
-$ cd s3x
+$ git clone https://github.com/yfwmaniish/vss.git
+$ cd vss
 ```
 
 2. Install the dependencies:
@@ -34,10 +34,10 @@ $ pip install -r requirements.txt
 
 ## Usage
 
-Run S3X using Python:
+Run V$$ using Python:
 
 ```sh
-$ python s3x.py --target example.com --all
+$ python vss.py --target example.com --all
 ```
 
 ### Options:

@@ -1,4 +1,4 @@
-name: S3X Security Scan
+name: V$$ Security Scan
 
 on:
   push:
@@ -58,13 +58,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Run S3X Security Scan
+    - name: Run V$$ Security Scan
       env:
         SHODAN_API_KEY: ${{ secrets.SHODAN_API_KEY }}
         TARGET_URL: ${{ github.event.inputs.target_url || 'https://httpbin.org' }}
         SCAN_TYPE: ${{ github.event.inputs.scan_type || 'all' }}
       run: |
-        python s3x.py -t $TARGET_URL --$SCAN_TYPE --json -o scan_results.json --api-key $SHODAN_API_KEY || true
+        python vss.py -t $TARGET_URL --$SCAN_TYPE --json -o scan_results.json --api-key $SHODAN_API_KEY || true
         
     - name: Process Scan Results
       id: process_results
@@ -79,7 +79,7 @@ jobs:
           echo "high_count=$HIGH_COUNT" >> $GITHUB_OUTPUT
           echo "total_findings=$TOTAL_FINDINGS" >> $GITHUB_OUTPUT
           
-          echo "## 🛡️ S3X Security Scan Results" >> $GITHUB_STEP_SUMMARY
+          echo "## 🛡️ V$$ Security Scan Results" >> $GITHUB_STEP_SUMMARY
           echo "- **Critical Issues:** $CRITICAL_COUNT" >> $GITHUB_STEP_SUMMARY
           echo "- **High Issues:** $HIGH_COUNT" >> $GITHUB_STEP_SUMMARY
           echo "- **Total Findings:** $TOTAL_FINDINGS" >> $GITHUB_STEP_SUMMARY
@@ -97,7 +97,7 @@ jobs:
     - name: Upload scan results
       uses: actions/upload-artifact@v3
       with:
-        name: s3x-scan-results
+        name: vss-scan-results
         path: scan_results.json
         retention-days: 30
         
@@ -138,7 +138,7 @@ jobs:
             repo: context.repo.repo,
             title: `🚨 Critical Security Vulnerabilities Found - ${new Date().toISOString().split('T')[0]}`,
             body: body,
-            labels: ['security', 'critical', 's3x-scan']
+            labels: ['security', 'critical', 'vss-scan']
           });
           
     - name: Comment on PR (if PR event)
@@ -153,7 +153,7 @@ jobs:
             const highCount = ${{ steps.process_results.outputs.high_count }};
             
             const comment = `
-            ## 🛡️ S3X Security Scan Results
+            ## 🛡️ V$$ Security Scan Results
             
             - **Critical Issues:** ${criticalCount}
             - **High Issues:** ${highCount}

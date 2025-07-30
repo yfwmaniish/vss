@@ -11,14 +11,14 @@ class Logger:
     def print_banner(self):
         if not self.quiet:
             print("""
-███████╗██████╗ ██╗  ██╗
-██╔════╝╚════██╗╚██╗██╔╝
-███████╗ █████╔╝ ╚███╔╝ 
-╚════██║ ╚═══██╗ ██╔██╗ 
-███████║██████╔╝██╔╝ ██╗
-╚══════╝╚═════╝ ╚═╝  ╚═╝
+██╗   ██╗█████╗ █████╗ 
+██║   ██║╚══██╗╚══██╗
+███╗ ███║█████╔╝█████╔╝
+██╔█╗█╔██║╚══██╗╚══██╗
+██╔╝█║ ██║█████╔╝█████╔╝
+╚═╝ ╚╝ ╚═╝╚════╝ ╚════╝ 
 
-S3X - Security Scanning and Exploitation v1.0
+V$$ - Vulnerability Scanner & Security Suite v1.0
 Made by Decimal & Vectorindia1 by Team H4$HCR4CK
 """)
 

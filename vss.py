@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-S3X - Security Scanning and Exploitation
+V$$ - Vulnerability Scanner & Security Suite
 Made by Decimal & Vectorindia1 by Team H4$HCR4CK
 """
 
@@ -24,7 +24,7 @@ import config
 import asyncio
 
 try:
-    from report_generator import S3XReportGenerator
+    from report_generator import VSSReportGenerator
     REPORT_GENERATOR_AVAILABLE = True
 except ImportError:
     REPORT_GENERATOR_AVAILABLE = False
@@ -87,17 +87,17 @@ async def run_async_scans(args, logger, results):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="S3X - Security Scanning and Exploitation",
+        description="V$$ - Vulnerability Scanner & Security Suite",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python s3x.py -t example.com --all
-  python s3x.py -t 192.168.1.1 --s3 --ftp
-  python s3x.py -t mybucket --s3-bucket
-  python s3x.py --jwt "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-  python s3x.py -t example.com --shodan --api-key YOUR_KEY
-  python s3x.py -t example.com --all --auto-report
-  python s3x.py -t example.com --dev --ssl --auto-report --report-format both
+  python vss.py -t example.com --all
+  python vss.py -t 192.168.1.1 --s3 --ftp
+  python vss.py -t mybucket --s3-bucket
+  python vss.py --jwt "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+  python vss.py -t example.com --shodan --api-key YOUR_KEY
+  python vss.py -t example.com --all --auto-report
+  python vss.py -t example.com --dev --ssl --auto-report --report-format both
         """
     )
     
@@ -253,7 +253,7 @@ Examples:
                 return
 
             logger.info("Generating scan report...")
-            report_generator = S3XReportGenerator()
+            report_generator = VSSReportGenerator()
             output_prefix = f"{Path(args.output).stem if args.output else args.target}_report"
 
             if args.report_format in ['html', 'both']:
