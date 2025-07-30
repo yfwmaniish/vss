@@ -1,0 +1,98 @@
+{
+  "target": "httpbin.org",
+  "timestamp": "2025-07-30 02:24:28",
+  "scans": {
+    "port_scan": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 02:24:28",
+      "findings": [
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "port": 80,
+          "service": "gunicorn",
+          "version": "19.9.0",
+          "description": "Open port 80 running gunicorn version 19.9.0",
+          "banner": "<CIMultiDictProxy('Date': 'Tue, 29 Jul 2025 20:56:14 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9593', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Contro"
+        },
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "port": 443,
+          "service": "gunicorn",
+          "version": "19.9.0",
+          "description": "Open port 443 running gunicorn version 19.9.0",
+          "banner": "<CIMultiDictProxy('Date': 'Tue, 29 Jul 2025 20:56:14 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9593', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Contro"
+        },
+        {
+          "type": "Service Vulnerability",
+          "severity": "HIGH",
+          "port": 80,
+          "service": "gunicorn",
+          "version": "19.9.0",
+          "description": "gunicorn 19.9.0 is vulnerable to CVE-2018-1000164",
+          "cve": "CVE-2018-1000164"
+        },
+        {
+          "type": "Service Vulnerability",
+          "severity": "HIGH",
+          "port": 443,
+          "service": "gunicorn",
+          "version": "19.9.0",
+          "description": "gunicorn 19.9.0 is vulnerable to CVE-2018-1000164",
+          "cve": "CVE-2018-1000164"
+        }
+      ],
+      "open_ports": [
+        80,
+        443
+      ],
+      "services": {
+        "80": {
+          "port": 80,
+          "service": "gunicorn",
+          "version": "19.9.0",
+          "banner": "<CIMultiDictProxy('Date': 'Tue, 29 Jul 2025 20:56:14 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9593', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true')>",
+          "ssl_enabled": false,
+          "details": {},
+          "status_code": 200,
+          "server": "gunicorn/19.9.0"
+        },
+        "443": {
+          "port": 443,
+          "service": "gunicorn",
+          "version": "19.9.0",
+          "banner": "<CIMultiDictProxy('Date': 'Tue, 29 Jul 2025 20:56:14 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9593', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true')>",
+          "ssl_enabled": true,
+          "details": {},
+          "status_code": 200,
+          "server": "gunicorn/19.9.0"
+        }
+      },
+      "vulnerabilities": [
+        {
+          "port": 80,
+          "service": "gunicorn",
+          "version": "19.9.0",
+          "cve": "CVE-2018-1000164",
+          "severity": "HIGH",
+          "description": "gunicorn 19.9.0 is vulnerable to CVE-2018-1000164"
+        },
+        {
+          "port": 443,
+          "service": "gunicorn",
+          "version": "19.9.0",
+          "cve": "CVE-2018-1000164",
+          "severity": "HIGH",
+          "description": "gunicorn 19.9.0 is vulnerable to CVE-2018-1000164"
+        }
+      ],
+      "stats": {
+        "total_scanned": 1024,
+        "total_open": 2,
+        "services_identified": 2,
+        "vulnerabilities_found": 2
+      }
+    }
+  }
+}

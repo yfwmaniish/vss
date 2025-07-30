@@ -1,0 +1,67 @@
+{
+  "target": "http://testphp.vulnweb.com",
+  "timestamp": "2025-07-30 00:54:34",
+  "scans": {
+    "s3": {
+      "target": "http://testphp.vulnweb.com",
+      "timestamp": "2025-07-30 00:54:34",
+      "buckets_found": [],
+      "pass": true,
+      "findings": []
+    },
+    "ftp": {
+      "target": "http://testphp.vulnweb.com",
+      "timestamp": "2025-07-30 00:58:32",
+      "ftp_services": [],
+      "pass": true,
+      "findings": []
+    },
+    "dev_endpoints": {
+      "target": "http://testphp.vulnweb.com",
+      "timestamp": "2025-07-30 00:59:12",
+      "endpoints_found": [
+        {
+          "url": "http://testphp.vulnweb.com/login.php",
+          "status_code": 200,
+          "content_length": 5523,
+          "indicators": []
+        },
+        {
+          "url": "http://testphp.vulnweb.com/admin",
+          "status_code": 200,
+          "content_length": 262,
+          "indicators": [
+            "Admin panel reference"
+          ]
+        }
+      ],
+      "pass": false,
+      "findings": [
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "/login.php",
+          "details": {
+            "url": "http://testphp.vulnweb.com/login.php",
+            "status_code": 200,
+            "content_length": 5523,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "/admin",
+          "details": {
+            "url": "http://testphp.vulnweb.com/admin",
+            "status_code": 200,
+            "content_length": 262,
+            "indicators": [
+              "Admin panel reference"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

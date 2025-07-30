@@ -1,0 +1,20 @@
+{
+  "target": "httpbin.org",
+  "timestamp": "2025-07-30 00:12:32",
+  "scans": {
+    "s3": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 00:12:32",
+      "buckets_found": [],
+      "pass": true,
+      "findings": []
+    },
+    "dev_endpoints": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 00:16:37",
+      "endpoints_found": [],
+      "pass": true,
+      "findings": []
+    }
+  }
+}

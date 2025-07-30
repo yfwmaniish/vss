@@ -1,0 +1,111 @@
+pipeline {
+    agent any
+    
+    parameters {
+        string(name: 'TARGET_URL', defaultValue: 'https://example.com', description: 'Target URL to scan')
+        choice(name: 'SCAN_TYPE', choices: ['all', 's3', 'ftp', 'dev', 'jwt'], description: 'Type of scan to perform')
+        booleanParam(name: 'FAIL_ON_CRITICAL', defaultValue: true, description: 'Fail build on critical vulnerabilities')
+        string(name: 'SHODAN_API_KEY', defaultValue: '', description: 'Shodan API key (optional)')
+    }
+    
+    environment {
+        HMS_HOME = "${WORKSPACE}/hms"
+        SHODAN_API_KEY = "${params.SHODAN_API_KEY}"
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
+        stage('Setup Environment') {
+            steps {
+                script {
+                    sh '''
+                        python3 -m venv venv
+                        source venv/bin/activate
+                        pip install -r requirements.txt
+                    '''
+                }
+            }
+        }
+        
+        stage('Security Scan') {
+            steps {
+                script {
+                    def scanCommand = "python3 hms.py -t ${params.TARGET_URL} --${params.SCAN_TYPE} --json -o scan_results.json"
+                    
+                    if (params.SHODAN_API_KEY) {
+                        scanCommand += " --api-key ${params.SHODAN_API_KEY}"
+                    }
+                    
+                    sh """
+                        source venv/bin/activate
+                        ${scanCommand}
+                    """
+                }
+            }
+        }
+        
+        stage('Process Results') {
+            steps {
+                script {
+                    if (fileExists('scan_results.json')) {
+                        def results = readJSON file: 'scan_results.json'
+                        def criticalIssues = []
+                        def highIssues = []
+                        
+                        results.scans.each { scanType, scanResult ->
+                            scanResult.findings?.each { finding ->
+                                if (finding.severity == 'CRITICAL') {
+                                    criticalIssues.add(finding)
+                                } else if (finding.severity == 'HIGH') {
+                                    highIssues.add(finding)
+                                }
+                            }
+                        }
+                        
+                        echo "Security Scan Results:"
+                        echo "Critical Issues: ${criticalIssues.size()}"
+                        echo "High Issues: ${highIssues.size()}"
+                        
+                        // Archive results
+                        archiveArtifacts artifacts: 'scan_results.json', fingerprint: true
+                        
+                        // Publish results to external systems
+                        publishHTML([
+                            allowMissing: false,
+                            alwaysLinkToLastBuild: true,
+                            keepAll: true,
+                            reportDir: '.',
+                            reportFiles: 'scan_results.json',
+                            reportName: 'HMS Security Scan Report'
+                        ])
+                        
+                        // Fail build if critical issues found and parameter is set
+                        if (params.FAIL_ON_CRITICAL && criticalIssues.size() > 0) {
+                            error("Critical security vulnerabilities found! Build failed.")
+                        }
+                    } else {
+                        error("Scan results file not found!")
+                    }
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Clean up
+            sh 'rm -rf venv'
+        }
+        success {
+            echo 'Security scan completed successfully!'
+        }
+        failure {
+            echo 'Security scan failed or found critical issues!'
+        }
+    }
+}

@@ -1,0 +1,1099 @@
+{
+  "target": "github.com",
+  "timestamp": "2025-07-30 07:12:28",
+  "scans": {
+    "s3": {
+      "target": "github.com",
+      "timestamp": "2025-07-30 07:12:28",
+      "buckets_found": [
+        {
+          "name": "github-files",
+          "accessible": true,
+          "listable": true,
+          "writable": false,
+          "region": null,
+          "objects": [],
+          "urls_tested": [
+            "https://github-files.s3.amazonaws.com/"
+          ]
+        }
+      ],
+      "pass": false,
+      "findings": [
+        {
+          "type": "Public S3 Bucket",
+          "severity": "HIGH",
+          "bucket": "github-files",
+          "details": {
+            "name": "github-files",
+            "accessible": true,
+            "listable": true,
+            "writable": false,
+            "region": null,
+            "objects": [],
+            "urls_tested": [
+              "https://github-files.s3.amazonaws.com/"
+            ]
+          }
+        }
+      ]
+    },
+    "ftp": {
+      "target": "github.com",
+      "timestamp": "2025-07-30 07:16:13",
+      "ftp_services": [],
+      "pass": true,
+      "findings": []
+    },
+    "shodan": {
+      "target": "github.com",
+      "timestamp": "2025-07-30 07:16:54",
+      "shodan_data": {},
+      "pass": true,
+      "findings": [],
+      "ip_address": "20.207.73.82"
+    },
+    "dev_endpoints": {
+      "target": "github.com",
+      "timestamp": "2025-07-30 07:16:54",
+      "endpoints_found": [
+        {
+          "url": "https://github.com/test",
+          "status_code": 200,
+          "content_length": 188041,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/dev",
+          "status_code": 200,
+          "content_length": 202972,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/development",
+          "status_code": 200,
+          "content_length": 173780,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/staging",
+          "status_code": 200,
+          "content_length": 173397,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/status",
+          "status_code": 200,
+          "content_length": 76,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/healthcheck",
+          "status_code": 200,
+          "content_length": 151722,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/ping",
+          "status_code": 200,
+          "content_length": 236224,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/config",
+          "status_code": 200,
+          "content_length": 205747,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/api-docs",
+          "status_code": 200,
+          "content_length": 151589,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/docs",
+          "status_code": 200,
+          "content_length": 223977,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/readme",
+          "status_code": 200,
+          "content_length": 302316,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/robots.txt",
+          "status_code": 200,
+          "content_length": 565,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/backup",
+          "status_code": 200,
+          "content_length": 194618,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/backups",
+          "status_code": 200,
+          "content_length": 186036,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/db",
+          "status_code": 200,
+          "content_length": 179998,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/logs",
+          "status_code": 200,
+          "content_length": 175561,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/log",
+          "status_code": 200,
+          "content_length": 151380,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/upload",
+          "status_code": 200,
+          "content_length": 207816,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/console",
+          "status_code": 200,
+          "content_length": 192857,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/cmd",
+          "status_code": 200,
+          "content_length": 181547,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/adminer",
+          "status_code": 200,
+          "content_length": 184246,
+          "indicators": [
+            "Admin panel reference"
+          ]
+        },
+        {
+          "url": "https://github.com/control",
+          "status_code": 200,
+          "content_length": 210395,
+          "indicators": [
+            "Admin panel reference"
+          ]
+        },
+        {
+          "url": "https://github.com/panel",
+          "status_code": 200,
+          "content_length": 185718,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/dashboard",
+          "status_code": 200,
+          "content_length": 43054,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/cpanel",
+          "status_code": 200,
+          "content_length": 262188,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/mail",
+          "status_code": 200,
+          "content_length": 177215,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/telnet",
+          "status_code": 200,
+          "content_length": 186737,
+          "indicators": []
+        },
+        {
+          "url": "https://github.com/rdp",
+          "status_code": 200,
+          "content_length": 201419,
+          "indicators": []
+        }
+      ],
+      "pass": false,
+      "findings": [
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/test",
+          "details": {
+            "url": "https://github.com/test",
+            "status_code": 200,
+            "content_length": 188041,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/dev",
+          "details": {
+            "url": "https://github.com/dev",
+            "status_code": 200,
+            "content_length": 202972,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/development",
+          "details": {
+            "url": "https://github.com/development",
+            "status_code": 200,
+            "content_length": 173780,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/staging",
+          "details": {
+            "url": "https://github.com/staging",
+            "status_code": 200,
+            "content_length": 173397,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/status",
+          "details": {
+            "url": "https://github.com/status",
+            "status_code": 200,
+            "content_length": 76,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/healthcheck",
+          "details": {
+            "url": "https://github.com/healthcheck",
+            "status_code": 200,
+            "content_length": 151722,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/ping",
+          "details": {
+            "url": "https://github.com/ping",
+            "status_code": 200,
+            "content_length": 236224,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/config",
+          "details": {
+            "url": "https://github.com/config",
+            "status_code": 200,
+            "content_length": 205747,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/api-docs",
+          "details": {
+            "url": "https://github.com/api-docs",
+            "status_code": 200,
+            "content_length": 151589,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/docs",
+          "details": {
+            "url": "https://github.com/docs",
+            "status_code": 200,
+            "content_length": 223977,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/readme",
+          "details": {
+            "url": "https://github.com/readme",
+            "status_code": 200,
+            "content_length": 302316,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/robots.txt",
+          "details": {
+            "url": "https://github.com/robots.txt",
+            "status_code": 200,
+            "content_length": 565,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/backup",
+          "details": {
+            "url": "https://github.com/backup",
+            "status_code": 200,
+            "content_length": 194618,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/backups",
+          "details": {
+            "url": "https://github.com/backups",
+            "status_code": 200,
+            "content_length": 186036,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/db",
+          "details": {
+            "url": "https://github.com/db",
+            "status_code": 200,
+            "content_length": 179998,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/logs",
+          "details": {
+            "url": "https://github.com/logs",
+            "status_code": 200,
+            "content_length": 175561,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/log",
+          "details": {
+            "url": "https://github.com/log",
+            "status_code": 200,
+            "content_length": 151380,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/upload",
+          "details": {
+            "url": "https://github.com/upload",
+            "status_code": 200,
+            "content_length": 207816,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/console",
+          "details": {
+            "url": "https://github.com/console",
+            "status_code": 200,
+            "content_length": 192857,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/cmd",
+          "details": {
+            "url": "https://github.com/cmd",
+            "status_code": 200,
+            "content_length": 181547,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/adminer",
+          "details": {
+            "url": "https://github.com/adminer",
+            "status_code": 200,
+            "content_length": 184246,
+            "indicators": [
+              "Admin panel reference"
+            ]
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/control",
+          "details": {
+            "url": "https://github.com/control",
+            "status_code": 200,
+            "content_length": 210395,
+            "indicators": [
+              "Admin panel reference"
+            ]
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/panel",
+          "details": {
+            "url": "https://github.com/panel",
+            "status_code": 200,
+            "content_length": 185718,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/dashboard",
+          "details": {
+            "url": "https://github.com/dashboard",
+            "status_code": 200,
+            "content_length": 43054,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/cpanel",
+          "details": {
+            "url": "https://github.com/cpanel",
+            "status_code": 200,
+            "content_length": 262188,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/mail",
+          "details": {
+            "url": "https://github.com/mail",
+            "status_code": 200,
+            "content_length": 177215,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/telnet",
+          "details": {
+            "url": "https://github.com/telnet",
+            "status_code": 200,
+            "content_length": 186737,
+            "indicators": []
+          }
+        },
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://github.com/rdp",
+          "details": {
+            "url": "https://github.com/rdp",
+            "status_code": 200,
+            "content_length": 201419,
+            "indicators": []
+          }
+        }
+      ]
+    },
+    "subdomain": {
+      "target": "github.com",
+      "domain": "github.com",
+      "timestamp": "2025-07-30 07:16:55",
+      "findings": [
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: github.com",
+          "subdomain": "github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: docs.github.com",
+          "subdomain": "docs.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: api.github.com",
+          "subdomain": "api.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: www.github.com",
+          "subdomain": "www.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: vpn-ca.iad.github.com",
+          "subdomain": "vpn-ca.iad.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: blog.github.com",
+          "subdomain": "blog.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: mailing.github.com",
+          "subdomain": "mailing.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: shop.github.com",
+          "subdomain": "shop.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: emails.github.com",
+          "subdomain": "emails.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: support.github.com",
+          "subdomain": "support.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: autodiscover.github.com",
+          "subdomain": "autodiscover.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: wiki.github.com",
+          "subdomain": "wiki.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: ws.support.github.com",
+          "subdomain": "ws.support.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: api.security.github.com",
+          "subdomain": "api.security.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: octocaptcha.review-lab.github.com",
+          "subdomain": "octocaptcha.review-lab.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: examregistration-uat.github.com",
+          "subdomain": "examregistration-uat.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: examregistration.github.com",
+          "subdomain": "examregistration.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: examadmin-uat.github.com",
+          "subdomain": "examadmin-uat.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: examadmin.github.com",
+          "subdomain": "examadmin.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: examregistration-uat-api.github.com",
+          "subdomain": "examregistration-uat-api.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: f.cloud.github.com",
+          "subdomain": "f.cloud.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: examregistration-api.github.com",
+          "subdomain": "examregistration-api.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: help.github.com",
+          "subdomain": "help.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: pkg.github.com",
+          "subdomain": "pkg.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: gist.github.com",
+          "subdomain": "gist.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: admin.github.com",
+          "subdomain": "admin.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: t.communication.github.com",
+          "subdomain": "t.communication.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: res.communication.github.com",
+          "subdomain": "res.communication.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: m.communication.github.com",
+          "subdomain": "m.communication.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: support.enterprise.github.com",
+          "subdomain": "support.enterprise.github.com",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: community.github.com",
+          "subdomain": "community.github.com",
+          "status": "alive"
+        }
+      ],
+      "subdomains": [
+        "admin.github.com",
+        "api.github.com",
+        "api.security.github.com",
+        "autodiscover.github.com",
+        "blog.github.com",
+        "communication.github.com",
+        "community.github.com",
+        "docs.github.com",
+        "emails.github.com",
+        "examadmin-uat.github.com",
+        "examadmin.github.com",
+        "examregistration-api.github.com",
+        "examregistration-uat-api.github.com",
+        "examregistration-uat.github.com",
+        "examregistration.github.com",
+        "f.cloud.github.com",
+        "garage.github.com",
+        "gist.github.com",
+        "github.com",
+        "help.github.com",
+        "import2.github.com",
+        "importer2.github.com",
+        "m.communication.github.com",
+        "mailing.github.com",
+        "ns1.github.com",
+        "ns2.github.com",
+        "octocaptcha.review-lab.github.com",
+        "pkg.github.com",
+        "porter2.github.com",
+        "registry.github.com",
+        "res.communication.github.com",
+        "review-lab.github.com",
+        "shop.github.com",
+        "smtp.github.com",
+        "support.enterprise.github.com",
+        "support.github.com",
+        "t.communication.github.com",
+        "test.github.com",
+        "vpn-ca.iad.github.com",
+        "wiki.github.com",
+        "ws.support.github.com",
+        "www.communication.github.com",
+        "www.github.com"
+      ],
+      "stats": {
+        "total_found": 43,
+        "alive_subdomains": 31,
+        "techniques_used": [
+          "dns_bruteforce",
+          "certificate_transparency",
+          "search_engines",
+          "zone_transfer"
+        ]
+      }
+    },
+    "port_scan": {
+      "target": "github.com",
+      "timestamp": "2025-07-30 07:17:18",
+      "findings": [
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "port": 22,
+          "service": "ssh",
+          "version": null,
+          "description": "Open port 22 running ssh version None",
+          "banner": "SSH-2.0-1581bab2"
+        },
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "port": 80,
+          "service": "http",
+          "version": null,
+          "description": "Open port 80 running http version None",
+          "banner": "<CIMultiDictProxy('Date': 'Wed, 30 Jul 2025 01:49:03 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Vary': 'X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, Accept-Language,Ac"
+        },
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "port": 443,
+          "service": "https",
+          "version": null,
+          "description": "Open port 443 running https version None",
+          "banner": "<CIMultiDictProxy('Date': 'Wed, 30 Jul 2025 01:49:03 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Vary': 'X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, Accept-Language,Ac"
+        }
+      ],
+      "open_ports": [
+        22,
+        80,
+        443
+      ],
+      "services": {
+        "22": {
+          "port": 22,
+          "service": "ssh",
+          "version": null,
+          "banner": "SSH-2.0-1581bab2",
+          "ssl_enabled": false,
+          "details": {}
+        },
+        "80": {
+          "port": 80,
+          "service": "http",
+          "version": null,
+          "banner": "<CIMultiDictProxy('Date': 'Wed, 30 Jul 2025 01:49:03 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Vary': 'X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, Accept-Language,Accept-Encoding, Accept, X-Requested-With', 'Content-Language': 'en-US', 'Etag': 'W/\"2551f48df2c9a044c843ee8f78659ab2\"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Frame-Options': 'deny', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'Content-Security-Policy': \"default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com github.githubassets.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com www.youtube-nocookie.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com images.ctfassets.net/8aevphvgewt8/; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com assets.ctfassets.net/8aevphvgewt8/ videos.ctfassets.net/8aevphvgewt8/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\", 'Server': 'github.com', 'Content-Encoding': 'gzip', 'Accept-Ranges': 'bytes', 'Set-Cookie': '_gh_sess=kWJOkCBbUTk5AjPquiSmQKMZBXtMoFVv7A0%2BFAA0ZnZAHJo6uHw7r%2FQa5ppd4TgQ8avcDBlC%2BC22mh7VR7OqfFEvlp05Hq7vO5TIYXn83j6e1JW9bxG63I7MVE11EVKfkBg0XxZAGyzeVQLe%2FbH%2BsHemIQwOSpDnnCsYOG7g1ZhHPDwhwqUtUGztxpMASHVV%2FwSOo0sPWUjcI9oC8V3wTaIN0SvQWpfIJl5cPd3QK8JPNIFBPhEVUnrFyUH%2FMnWXKEjFH2czGxCpxTNqruqIeg%3D%3D--UjZXWOlju3No%2BlBO--mYObpajdLb0cJGs2i0QXdw%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax', 'Set-Cookie': '_octo=GH1.1.304470247.1753840144; Path=/; Domain=github.com; Expires=Thu, 30 Jul 2026 01:49:04 GMT; Secure; SameSite=Lax', 'Set-Cookie': 'logged_in=no; Path=/; Domain=github.com; Expires=Thu, 30 Jul 2026 01:49:04 GMT; HttpOnly; Secure; SameSite=Lax', 'X-GitHub-Request-Id': '2845:111D6D:1857FB:24374F:68897A10', 'Transfer-Encoding': 'chunked')>",
+          "ssl_enabled": false,
+          "details": {},
+          "status_code": 200,
+          "server": "github.com"
+        },
+        "443": {
+          "port": 443,
+          "service": "https",
+          "version": null,
+          "banner": "<CIMultiDictProxy('Date': 'Wed, 30 Jul 2025 01:49:03 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Vary': 'X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, Accept-Language,Accept-Encoding, Accept, X-Requested-With', 'Content-Language': 'en-US', 'Etag': 'W/\"2551f48df2c9a044c843ee8f78659ab2\"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'Strict-Transport-Security': 'max-age=31536000; includeSubdomains; preload', 'X-Frame-Options': 'deny', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Referrer-Policy': 'origin-when-cross-origin, strict-origin-when-cross-origin', 'Content-Security-Policy': \"default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com github.githubassets.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com www.youtube-nocookie.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com images.ctfassets.net/8aevphvgewt8/; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com assets.ctfassets.net/8aevphvgewt8/ videos.ctfassets.net/8aevphvgewt8/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\", 'Server': 'github.com', 'Content-Encoding': 'gzip', 'Accept-Ranges': 'bytes', 'Set-Cookie': '_gh_sess=J6XSuD2MRoSq3FiQP7%2BnlhtNrAWuPgU5Swh1z5csM1430bXv4v%2BKzBYv9r9dupzpHnl5Dkuy0mFTkJldDAPe%2FoNmZq0qd5Go6uIcAh6NsqWkncniboH34AFdAhLBZE3%2BoZd1zXZFPHNPu7Cy%2FIM3lqpEa7u8JYD8%2BbLdlQlDYd4Y5J%2BYBOAVwZN5fA%2F1Arhf1Y1sEBMVmabvANDuttXhn1oGxGaLLFsq5PU322G2siWHs2lx%2FS%2F5KvFrM0geJSI%2BkzU0IQwtjy9zxZDGkOIN2w%3D%3D--OqXWueUTz0ESSAfk--h0jWfuv8wAwAWkP4aZng2g%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax', 'Set-Cookie': '_octo=GH1.1.2100050996.1753840144; Path=/; Domain=github.com; Expires=Thu, 30 Jul 2026 01:49:04 GMT; Secure; SameSite=Lax', 'Set-Cookie': 'logged_in=no; Path=/; Domain=github.com; Expires=Thu, 30 Jul 2026 01:49:04 GMT; HttpOnly; Secure; SameSite=Lax', 'X-GitHub-Request-Id': '649C:1A4ED6:17F913:23DA4B:68897A0F', 'Transfer-Encoding': 'chunked')>",
+          "ssl_enabled": true,
+          "details": {},
+          "status_code": 200,
+          "server": "github.com"
+        }
+      },
+      "vulnerabilities": [],
+      "stats": {
+        "total_scanned": 1024,
+        "total_open": 3,
+        "services_identified": 3,
+        "vulnerabilities_found": 0
+      }
+    },
+    "ssl": {
+      "target": "github.com",
+      "hostname": "github.com",
+      "port": 443,
+      "timestamp": "2025-07-30 07:19:04",
+      "findings": [
+        {
+          "type": "Weak TLS Protocol",
+          "severity": "HIGH",
+          "description": "Weak TLS/SSL protocol supported: SSLv2"
+        },
+        {
+          "type": "Weak TLS Protocol",
+          "severity": "HIGH",
+          "description": "Weak TLS/SSL protocol supported: SSLv3"
+        },
+        {
+          "type": "Certificate Validation Failed",
+          "severity": "HIGH",
+          "description": "SSL certificate validation failed - may be self-signed or invalid"
+        }
+      ],
+      "certificate": {
+        "subject": {
+          "CN": "github.com"
+        },
+        "issuer": {
+          "C": "GB",
+          "ST": "Greater Manchester",
+          "L": "Salford",
+          "O": "Sectigo Limited",
+          "CN": "Sectigo ECC Domain Validation Secure Server CA"
+        },
+        "version": 2,
+        "serial_number": "227830333772454795620750445496253172213",
+        "not_before": "20250205000000Z",
+        "not_after": "20260205235959Z",
+        "signature_algorithm": "ecdsa-with-SHA256",
+        "has_expired": false,
+        "extensions": [
+          {
+            "name": "authorityKeyIdentifier",
+            "critical": 0,
+            "data": "F6:85:0A:3B:11:86:E1:04:7D:0E:AA:0B:2C:D2:EE:CC:64:7B:7B:AE"
+          },
+          {
+            "name": "subjectKeyIdentifier",
+            "critical": 0,
+            "data": "53:C8:7F:DE:9E:98:4E:C7:4D:D6:BC:DE:AB:95:3E:30:3D:3D:D1:C8"
+          },
+          {
+            "name": "keyUsage",
+            "critical": 1,
+            "data": "Digital Signature"
+          },
+          {
+            "name": "basicConstraints",
+            "critical": 1,
+            "data": "CA:FALSE"
+          },
+          {
+            "name": "extendedKeyUsage",
+            "critical": 0,
+            "data": "TLS Web Server Authentication, TLS Web Client Authentication"
+          },
+          {
+            "name": "certificatePolicies",
+            "critical": 0,
+            "data": "Policy: 1.3.6.1.4.1.6449.1.2.2.7\n  CPS: https://sectigo.com/CPS\nPolicy: 2.23.140.1.2.1"
+          },
+          {
+            "name": "authorityInfoAccess",
+            "critical": 0,
+            "data": "CA Issuers - URI:http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt\nOCSP - URI:http://ocsp.sectigo.com"
+          },
+          {
+            "name": "ct_precert_scts",
+            "critical": 0,
+            "data": "Signed Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : 96:97:64:BF:55:58:97:AD:F7:43:87:68:37:08:42:77:\n                E9:F0:3A:D5:F6:A4:F3:36:6E:46:A4:3F:0F:CA:A9:C6\n    Timestamp : Feb  5 00:03:50.475 2025 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:44:02:20:3B:8B:AA:3E:2E:94:23:B7:A0:1E:12:39:\n                6D:1E:1B:3F:4E:21:02:9C:77:74:C5:37:9E:AF:FD:EF:\n                0F:5C:60:B0:02:20:62:51:B0:46:8B:7E:4A:A1:01:0A:\n                CF:FF:7E:BC:7F:60:74:CF:C2:8C:7D:40:B7:72:EC:68:\n                D3:2D:61:DF:70:C0\nSigned Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : 19:86:D4:C7:28:AA:6F:FE:BA:03:6F:78:2A:4D:01:91:\n                AA:CE:2D:72:31:0F:AE:CE:5D:70:41:2D:25:4C:C7:D4\n    Timestamp : Feb  5 00:03:50.381 2025 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:46:02:21:00:E5:AC:89:F1:EC:9F:B7:31:FA:A0:C4:\n                1D:BE:16:FA:B7:74:C9:64:D6:A8:F8:72:13:B0:FF:E1:\n                E4:61:57:C6:D0:02:21:00:C4:FE:24:A0:10:7D:4B:88:\n                74:11:B1:7E:BC:AB:1A:BC:2C:38:3D:E9:46:CD:6D:C8:\n                0C:B2:91:D3:C6:46:0B:13\nSigned Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : CB:38:F7:15:89:7C:84:A1:44:5F:5B:C1:DD:FB:C9:6E:\n                F2:9A:59:CD:47:0A:69:05:85:B0:CB:14:C3:14:58:E7\n    Timestamp : Feb  5 00:03:50.437 2025 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:45:02:21:00:D4:62:96:F7:66:A0:0C:53:49:21:8A:\n                CC:1F:78:1A:25:D5:EC:74:85:69:51:C6:4E:7F:11:F5:\n                16:4B:1B:B8:B1:02:20:52:42:7E:C9:48:36:17:39:DD:\n                0D:13:20:C2:47:75:C1:4E:5B:6B:60:1B:8B:41:03:57:\n                4B:F3:CD:6D:5D:B3:27"
+          },
+          {
+            "name": "subjectAltName",
+            "critical": 0,
+            "data": "DNS:github.com, DNS:www.github.com"
+          }
+        ]
+      },
+      "tls_config": {
+        "supported_protocols": [
+          "SSLv2",
+          "SSLv3",
+          "TLSv1.2",
+          "TLSv1.3"
+        ],
+        "supported_ciphers": [],
+        "certificate_validation": false
+      },
+      "vulnerabilities": [],
+      "cipher_analysis": {
+        "supported_ciphers": [
+          [
+            "TLS_AES_128_GCM_SHA256",
+            "TLSv1.3",
+            128
+          ]
+        ],
+        "weak_ciphers_found": [],
+        "findings": []
+      },
+      "comprehensive_vulnerabilities": {
+        "findings": [],
+        "vulnerabilities": {
+          "HEARTBLEED": {
+            "vulnerable": false,
+            "description": "OpenSSL Heartbleed vulnerability (CVE-2014-0160)"
+          },
+          "POODLE_SSL": {
+            "vulnerable": false,
+            "description": "POODLE vulnerability in SSLv3 (CVE-2014-3566)"
+          },
+          "POODLE_TLS": {
+            "vulnerable": false,
+            "description": "POODLE vulnerability in TLS (CVE-2014-8730)"
+          },
+          "BEAST": {
+            "vulnerable": false,
+            "description": "BEAST vulnerability in TLS 1.0 (CVE-2011-3389)"
+          },
+          "CRIME": {
+            "vulnerable": false,
+            "description": "CRIME compression vulnerability (CVE-2012-4929)"
+          },
+          "BREACH": {
+            "vulnerable": false,
+            "description": "BREACH compression vulnerability"
+          },
+          "FREAK": {
+            "vulnerable": false,
+            "description": "FREAK vulnerability (CVE-2015-0204)"
+          },
+          "LOGJAM": {
+            "vulnerable": false,
+            "description": "Logjam vulnerability (CVE-2015-4000)"
+          },
+          "DROWN": {
+            "vulnerable": false,
+            "description": "DROWN vulnerability (CVE-2016-0800)"
+          },
+          "SWEET32": {
+            "vulnerable": false,
+            "description": "Sweet32 vulnerability (CVE-2016-2183)"
+          },
+          "ROBOT": {
+            "vulnerable": false,
+            "description": "ROBOT vulnerability (CVE-2017-13099)"
+          }
+        }
+      }
+    },
+    "virustotal": {
+      "target": "github.com",
+      "timestamp": "2025-07-30 07:19:06",
+      "findings": [
+        {
+          "type": "API Error",
+          "severity": "LOW",
+          "description": "VirusTotal API error for IP: 404"
+        }
+      ],
+      "url_analysis": {},
+      "domain_analysis": {
+        "findings": [],
+        "stats": {
+          "malicious": 0,
+          "suspicious": 0,
+          "undetected": 28,
+          "harmless": 66,
+          "timeout": 0
+        },
+        "ip_address": "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8",
+        "whois": "Creation Date: 2007-10-09T18:20:50+0000\nCreation Date: 2007-10-09T18:20:50Z\nDNSSEC: unsigned\nDomain Name: GITHUB.COM\nDomain Name: github.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: DNS1.P08.NSONE.NET\nName Server: DNS2.P08.NSONE.NET\nName Server: DNS3.P08.NSONE.NET\nName Server: DNS4.P08.NSONE.NET\nName Server: NS-1283.AWSDNS-32.ORG\nName Server: NS-1707.AWSDNS-21.CO.UK\nName Server: NS-421.AWSDNS-52.COM\nName Server: NS-520.AWSDNS-01.NET\nName Server: dns1.p08.nsone.net\nName Server: dns2.p08.nsone.net\nName Server: dns3.p08.nsone.net\nName Server: dns4.p08.nsone.net\nName Server: ns-1283.awsdns-32.org\nName Server: ns-1707.awsdns-21.co.uk\nName Server: ns-421.awsdns-52.com\nName Server: ns-520.awsdns-01.net\nRegistrant Country: US\nRegistrant Email: 7747675dc9706d06s@\nRegistrant Organization: e9cfc3ab0c85f792\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2026-10-09T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1264983250_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-10-09T18:20:50Z\nUpdated Date: 2024-09-07T09:16:32Z\nUpdated Date: 2024-09-07T09:16:33+0000"
+      },
+      "ip_analysis": {
+        "findings": [
+          {
+            "type": "API Error",
+            "severity": "LOW",
+            "description": "VirusTotal API error for IP: 404"
+          }
+        ],
+        "stats": {},
+        "country": null,
+        "as_owner": null
+      }
+    }
+  }
+}

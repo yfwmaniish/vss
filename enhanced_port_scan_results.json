@@ -1,0 +1,63 @@
+{
+  "target": "httpbin.org",
+  "timestamp": "2025-07-30 02:20:15",
+  "scans": {
+    "port_scan": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 02:20:15",
+      "findings": [
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "port": 80,
+          "service": "http",
+          "version": null,
+          "description": "Open port 80 running http version None",
+          "banner": "<CIMultiDictProxy('Date': 'Tue, 29 Jul 2025 20:52:02 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9593', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Contro"
+        },
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "port": 443,
+          "service": "https",
+          "version": null,
+          "description": "Open port 443 running https version None",
+          "banner": "<CIMultiDictProxy('Date': 'Tue, 29 Jul 2025 20:52:03 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9593', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Contro"
+        }
+      ],
+      "open_ports": [
+        80,
+        443
+      ],
+      "services": {
+        "80": {
+          "port": 80,
+          "service": "http",
+          "version": null,
+          "banner": "<CIMultiDictProxy('Date': 'Tue, 29 Jul 2025 20:52:02 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9593', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true')>",
+          "ssl_enabled": false,
+          "details": {},
+          "status_code": 200,
+          "server": "gunicorn/19.9.0"
+        },
+        "443": {
+          "port": 443,
+          "service": "https",
+          "version": null,
+          "banner": "<CIMultiDictProxy('Date': 'Tue, 29 Jul 2025 20:52:03 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '9593', 'Connection': 'keep-alive', 'Server': 'gunicorn/19.9.0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true')>",
+          "ssl_enabled": true,
+          "details": {},
+          "status_code": 200,
+          "server": "gunicorn/19.9.0"
+        }
+      },
+      "vulnerabilities": [],
+      "stats": {
+        "total_scanned": 1024,
+        "total_open": 2,
+        "services_identified": 2,
+        "vulnerabilities_found": 0
+      }
+    }
+  }
+}

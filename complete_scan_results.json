@@ -1,0 +1,39 @@
+{
+  "target": "httpbin.org",
+  "timestamp": "2025-07-30 00:37:26",
+  "scans": {
+    "s3": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 00:37:26",
+      "buckets_found": [],
+      "pass": true,
+      "findings": []
+    },
+    "dev_endpoints": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 00:41:24",
+      "endpoints_found": [
+        {
+          "url": "https://httpbin.org/robots.txt",
+          "status_code": 200,
+          "content_length": 30,
+          "indicators": []
+        }
+      ],
+      "pass": false,
+      "findings": [
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "/robots.txt",
+          "details": {
+            "url": "https://httpbin.org/robots.txt",
+            "status_code": 200,
+            "content_length": 30,
+            "indicators": []
+          }
+        }
+      ]
+    }
+  }
+}

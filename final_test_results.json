@@ -1,0 +1,283 @@
+{
+  "target": "httpbin.org",
+  "timestamp": "2025-07-30 01:53:13",
+  "scans": {
+    "s3": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 01:53:13",
+      "buckets_found": [],
+      "pass": true,
+      "findings": []
+    },
+    "ftp": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 01:57:09",
+      "ftp_services": [],
+      "pass": true,
+      "findings": []
+    },
+    "shodan": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 01:57:49",
+      "shodan_data": {},
+      "pass": true,
+      "findings": [],
+      "ip_address": "54.158.253.62"
+    },
+    "dev_endpoints": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 01:57:50",
+      "endpoints_found": [
+        {
+          "url": "https://httpbin.org/robots.txt",
+          "status_code": 200,
+          "content_length": 30,
+          "indicators": []
+        }
+      ],
+      "pass": false,
+      "findings": [
+        {
+          "type": "Exposed Dev/Debug Endpoint",
+          "severity": "MEDIUM",
+          "endpoint": "https://httpbin.org/robots.txt",
+          "details": {
+            "url": "https://httpbin.org/robots.txt",
+            "status_code": 200,
+            "content_length": 30,
+            "indicators": []
+          }
+        }
+      ]
+    },
+    "subdomain": {
+      "target": "httpbin.org",
+      "domain": "httpbin.org",
+      "timestamp": "2025-07-30 01:57:55",
+      "findings": [
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: beta.httpbin.org",
+          "subdomain": "beta.httpbin.org",
+          "status": "alive"
+        },
+        {
+          "type": "Subdomain Discovery",
+          "severity": "INFO",
+          "description": "Active subdomain discovered: www.httpbin.org",
+          "subdomain": "www.httpbin.org",
+          "status": "alive"
+        }
+      ],
+      "subdomains": [
+        "beta.httpbin.org",
+        "www.httpbin.org"
+      ],
+      "stats": {
+        "total_found": 2,
+        "alive_subdomains": 2,
+        "techniques_used": [
+          "dns_bruteforce",
+          "certificate_transparency",
+          "search_engines",
+          "zone_transfer"
+        ]
+      }
+    },
+    "port_scan": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 01:57:59",
+      "findings": [
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "description": "Open port discovered: 80",
+          "port": 80,
+          "status": "open"
+        },
+        {
+          "type": "Open Port",
+          "severity": "INFO",
+          "description": "Open port discovered: 443",
+          "port": 443,
+          "status": "open"
+        }
+      ],
+      "open_ports": [
+        80,
+        443
+      ],
+      "stats": {
+        "total_scanned": 1024,
+        "total_open": 2
+      }
+    },
+    "ssl": {
+      "target": "httpbin.org",
+      "hostname": "httpbin.org",
+      "port": 443,
+      "timestamp": "2025-07-30 01:58:14",
+      "findings": [
+        {
+          "type": "Weak TLS Protocol",
+          "severity": "HIGH",
+          "description": "Weak TLS/SSL protocol supported: SSLv2"
+        },
+        {
+          "type": "Weak TLS Protocol",
+          "severity": "HIGH",
+          "description": "Weak TLS/SSL protocol supported: SSLv3"
+        },
+        {
+          "type": "POODLE Vulnerability",
+          "severity": "HIGH",
+          "description": "Server supports SSLv3 which is vulnerable to POODLE attack"
+        }
+      ],
+      "certificate": {
+        "subject": {
+          "CN": "httpbin.org"
+        },
+        "issuer": {
+          "C": "US",
+          "O": "Amazon",
+          "CN": "Amazon RSA 2048 M03"
+        },
+        "version": 2,
+        "serial_number": "18803108618493487645150481186415825213",
+        "not_before": "20250720000000Z",
+        "not_after": "20260817235959Z",
+        "signature_algorithm": "sha256WithRSAEncryption",
+        "has_expired": false,
+        "extensions": [
+          {
+            "name": "authorityKeyIdentifier",
+            "critical": 0,
+            "data": "55:D9:18:5F:D2:1C:CC:01:E1:58:B4:BE:AB:D9:55:42:01:D7:2E:02"
+          },
+          {
+            "name": "subjectKeyIdentifier",
+            "critical": 0,
+            "data": "FA:2A:22:7A:57:52:50:31:C9:75:46:3A:F7:3D:23:63:CD:41:3A:BC"
+          },
+          {
+            "name": "subjectAltName",
+            "critical": 0,
+            "data": "DNS:httpbin.org, DNS:*.httpbin.org"
+          },
+          {
+            "name": "certificatePolicies",
+            "critical": 0,
+            "data": "Policy: 2.23.140.1.2.1"
+          },
+          {
+            "name": "keyUsage",
+            "critical": 1,
+            "data": "Digital Signature, Key Encipherment"
+          },
+          {
+            "name": "extendedKeyUsage",
+            "critical": 0,
+            "data": "TLS Web Server Authentication"
+          },
+          {
+            "name": "crlDistributionPoints",
+            "critical": 0,
+            "data": "Full Name:\n  URI:http://crl.r2m03.amazontrust.com/r2m03.crl\n"
+          },
+          {
+            "name": "authorityInfoAccess",
+            "critical": 0,
+            "data": "OCSP - URI:http://ocsp.r2m03.amazontrust.com\nCA Issuers - URI:http://crt.r2m03.amazontrust.com/r2m03.cer"
+          },
+          {
+            "name": "basicConstraints",
+            "critical": 1,
+            "data": "CA:FALSE"
+          },
+          {
+            "name": "ct_precert_scts",
+            "critical": 0,
+            "data": "Signed Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : D8:09:55:3B:94:4F:7A:FF:C8:16:19:6F:94:4F:85:AB:\n                B0:F8:FC:5E:87:55:26:0F:15:D1:2E:72:BB:45:4B:14\n    Timestamp : Jul 20 03:29:09.632 2025 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:45:02:20:23:C5:0F:9B:13:23:25:E2:19:65:38:AA:\n                2B:68:0D:20:AB:57:BF:7D:B2:F3:E7:A1:21:5E:6D:A8:\n                C8:D3:BC:06:02:21:00:8C:0B:CD:83:1A:E9:83:30:27:\n                21:B7:DE:F5:35:0D:B2:A5:AE:88:B7:EC:1C:12:C0:36:\n                F8:89:A6:53:17:67:59\nSigned Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : C2:31:7E:57:45:19:A3:45:EE:7F:38:DE:B2:90:41:EB:\n                C7:C2:21:5A:22:BF:7F:D5:B5:AD:76:9A:D9:0E:52:CD\n    Timestamp : Jul 20 03:29:09.616 2025 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:45:02:21:00:F0:E6:F6:9A:B2:D0:58:BE:AE:3C:DF:\n                85:59:32:7F:18:DE:0B:40:69:1B:32:52:08:26:56:1C:\n                11:A9:AA:54:CA:02:20:78:1F:9F:AE:EB:65:C1:A4:C9:\n                4E:53:BC:96:16:08:6C:B5:9E:05:96:59:70:FD:05:DE:\n                17:BC:82:56:A3:BF:B2\nSigned Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : 94:4E:43:87:FA:EC:C1:EF:81:F3:19:24:26:A8:18:65:\n                01:C7:D3:5F:38:02:01:3F:72:67:7D:55:37:2E:19:D8\n    Timestamp : Jul 20 03:29:09.631 2025 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:45:02:20:74:DC:86:D4:DD:AE:30:7A:3A:0A:EE:9B:\n                D5:28:AF:FB:E4:81:0F:07:3A:7A:8C:78:20:03:E8:84:\n                24:67:39:A9:02:21:00:F7:16:10:1A:11:4D:B7:FF:46:\n                BD:41:7D:8F:CC:FA:4B:D2:DA:46:A9:36:A1:B1:B4:5A:\n                9A:F0:C7:21:AB:77:68"
+          }
+        ]
+      },
+      "tls_config": {
+        "supported_protocols": [
+          "SSLv2",
+          "SSLv3",
+          "TLSv1.2",
+          "TLSv1.3"
+        ],
+        "supported_ciphers": [],
+        "certificate_validation": true
+      },
+      "vulnerabilities": [
+        {
+          "type": "POODLE Vulnerability",
+          "severity": "HIGH",
+          "description": "Server supports SSLv3 which is vulnerable to POODLE attack"
+        }
+      ]
+    },
+    "virustotal": {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-30 01:58:25",
+      "findings": [
+        {
+          "type": "Malicious Domain",
+          "severity": "CRITICAL",
+          "description": "Domain flagged as malicious by 1 security vendors",
+          "malicious_count": 1,
+          "total_scans": 94
+        },
+        {
+          "type": "Negative Domain Reputation",
+          "severity": "MEDIUM",
+          "description": "Domain has negative reputation score: -1",
+          "reputation": -1
+        }
+      ],
+      "url_analysis": {},
+      "domain_analysis": {
+        "findings": [
+          {
+            "type": "Malicious Domain",
+            "severity": "CRITICAL",
+            "description": "Domain flagged as malicious by 1 security vendors",
+            "malicious_count": 1,
+            "total_scans": 94
+          },
+          {
+            "type": "Negative Domain Reputation",
+            "severity": "MEDIUM",
+            "description": "Domain has negative reputation score: -1",
+            "reputation": -1
+          }
+        ],
+        "stats": {
+          "malicious": 1,
+          "suspicious": 0,
+          "undetected": 30,
+          "harmless": 63,
+          "timeout": 0
+        },
+        "ip_address": "54.158.253.62",
+        "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2011-06-12T21:57:10Z\nDNSSEC: unsigned\nDomain Name: httpbin.org\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS-1053.AWSDNS-03.ORG\nName Server: NS-1555.AWSDNS-02.CO.UK\nName Server: NS-173.AWSDNS-21.COM\nName Server: NS-884.AWSDNS-46.NET\nName Server: ns-1053.awsdns-03.org\nName Server: ns-1555.awsdns-02.co.uk\nName Server: ns-173.awsdns-21.com\nName Server: ns-884.awsdns-46.net\nRegistrant City: 3495bcf1839c6374\nRegistrant City: e8faa050f23df84b\nRegistrant Country: GB\nRegistrant Email: 18be75447eb00116s@identity-protect.org\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Fax: a4c349958db8f29d\nRegistrant Name: 3495bcf1839c6374\nRegistrant Name: ea4576e4bab36810\nRegistrant Organization: 038a292988566233\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 33d4221f20a0d199\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 0c47207fb5546dc6\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 0449eb7840e3a030\nRegistrant Street: 1614d10740614cc5\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: trustandsafety@support.aws.com\nRegistrar Abuse Contact Phone: +1.2024422253\nRegistrar IANA ID: 468\nRegistrar Registration Expiration Date: 2026-06-12T21:57:10Z\nRegistrar URL: http://registrar.amazon.com\nRegistrar URL: https://registrar.amazon.com\nRegistrar WHOIS Server: whois.registrar.amazon\nRegistrar: Amazon Registrar, Inc.\nRegistry Admin ID: REDACTED\nRegistry Domain ID: e443c23686f24e58a4cd3e4ab9ee7bc8-LROR\nRegistry Expiry Date: 2026-06-12T21:57:10Z\nRegistry Registrant ID: Not Available From Registry\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: Not Available From Registry\nRegistry Tech ID: REDACTED\nTech City: Hayes\nTech City: REDACTED\nTech Country: GB\nTech Country: REDACTED\nTech Email: 18be75447eb00116s@identity-protect.org\nTech Organization: Identity Protection Service\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech Postal Code: UB3 9TR\nTech State/Province: Middlesex\nTech State/Province: REDACTED\nUpdated Date: 2025-05-08T21:57:27Z\nUpdated Date: 2025-05-13T21:58:18Z"
+      },
+      "ip_analysis": {
+        "findings": [],
+        "stats": {
+          "malicious": 0,
+          "suspicious": 0,
+          "undetected": 94,
+          "harmless": 0,
+          "timeout": 0
+        },
+        "country": "US",
+        "as_owner": "AMAZON-AES"
+      }
+    }
+  }
+}

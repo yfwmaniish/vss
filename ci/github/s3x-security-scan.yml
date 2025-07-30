@@ -1,0 +1,177 @@
+name: S3X Security Scan
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      target_url:
+        description: 'Target URL to scan'
+        required: true
+        default: 'https://example.com'
+      scan_type:
+        description: 'Scan type'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+        - all
+        - s3
+        - ftp
+        - dev
+        - jwt
+        - shodan
+      fail_on_critical:
+        description: 'Fail on critical vulnerabilities'
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Cache Python dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Run S3X Security Scan
+      env:
+        SHODAN_API_KEY: ${{ secrets.SHODAN_API_KEY }}
+        TARGET_URL: ${{ github.event.inputs.target_url || 'https://httpbin.org' }}
+        SCAN_TYPE: ${{ github.event.inputs.scan_type || 'all' }}
+      run: |
+        python s3x.py -t $TARGET_URL --$SCAN_TYPE --json -o scan_results.json --api-key $SHODAN_API_KEY || true
+        
+    - name: Process Scan Results
+      id: process_results
+      run: |
+        if [ -f scan_results.json ]; then
+          # Count critical and high severity issues
+          CRITICAL_COUNT=$(jq '[.scans[] | .findings[]? | select(.severity == "CRITICAL")] | length' scan_results.json)
+          HIGH_COUNT=$(jq '[.scans[] | .findings[]? | select(.severity == "HIGH")] | length' scan_results.json)
+          TOTAL_FINDINGS=$(jq '[.scans[] | .findings[]?] | length' scan_results.json)
+          
+          echo "critical_count=$CRITICAL_COUNT" >> $GITHUB_OUTPUT
+          echo "high_count=$HIGH_COUNT" >> $GITHUB_OUTPUT
+          echo "total_findings=$TOTAL_FINDINGS" >> $GITHUB_OUTPUT
+          
+          echo "## 🛡️ S3X Security Scan Results" >> $GITHUB_STEP_SUMMARY
+          echo "- **Critical Issues:** $CRITICAL_COUNT" >> $GITHUB_STEP_SUMMARY
+          echo "- **High Issues:** $HIGH_COUNT" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Findings:** $TOTAL_FINDINGS" >> $GITHUB_STEP_SUMMARY
+          
+          # Create detailed report
+          echo "### Detailed Findings" >> $GITHUB_STEP_SUMMARY
+          jq -r '.scans[] | .findings[]? | "- **\(.severity)**: \(.type) - \(.description // "No description")"' scan_results.json >> $GITHUB_STEP_SUMMARY
+        else
+          echo "No scan results file found"
+          echo "critical_count=0" >> $GITHUB_OUTPUT
+          echo "high_count=0" >> $GITHUB_OUTPUT
+          echo "total_findings=0" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Upload scan results
+      uses: actions/upload-artifact@v3
+      with:
+        name: s3x-scan-results
+        path: scan_results.json
+        retention-days: 30
+        
+    - name: Create Security Issue (on critical findings)
+      if: steps.process_results.outputs.critical_count > 0
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const results = JSON.parse(fs.readFileSync('scan_results.json', 'utf8'));
+          
+          let criticalFindings = [];
+          Object.values(results.scans).forEach(scan => {
+            if (scan.findings) {
+              scan.findings.forEach(finding => {
+                if (finding.severity === 'CRITICAL') {
+                  criticalFindings.push(finding);
+                }
+              });
+            }
+          });
+          
+          const body = `
+          ## 🚨 Critical Security Vulnerabilities Detected
+          
+          **Target:** ${results.target}
+          **Scan Time:** ${results.timestamp}
+          **Critical Issues:** ${criticalFindings.length}
+          
+          ### Critical Findings:
+          ${criticalFindings.map(f => `- **${f.type}**: ${f.description || 'No description'}`).join('\n')}
+          
+          **Action Required:** Please review and address these critical security issues immediately.
+          `;
+          
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `🚨 Critical Security Vulnerabilities Found - ${new Date().toISOString().split('T')[0]}`,
+            body: body,
+            labels: ['security', 'critical', 's3x-scan']
+          });
+          
+    - name: Comment on PR (if PR event)
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          if (fs.existsSync('scan_results.json')) {
+            const results = JSON.parse(fs.readFileSync('scan_results.json', 'utf8'));
+            const criticalCount = ${{ steps.process_results.outputs.critical_count }};
+            const highCount = ${{ steps.process_results.outputs.high_count }};
+            
+            const comment = `
+            ## 🛡️ S3X Security Scan Results
+            
+            - **Critical Issues:** ${criticalCount}
+            - **High Issues:** ${highCount}
+            - **Total Findings:** ${{ steps.process_results.outputs.total_findings }}
+            
+            ${criticalCount > 0 ? '⚠️ **Critical vulnerabilities found! Please review before merging.**' : '✅ No critical vulnerabilities found.'}
+            `;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+          }
+          
+    - name: Fail on critical vulnerabilities
+      if: github.event.inputs.fail_on_critical == 'true' && steps.process_results.outputs.critical_count > 0
+      run: |
+        echo "❌ Critical vulnerabilities found. Failing the workflow."
+        exit 1
