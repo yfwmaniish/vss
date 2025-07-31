@@ -1,0 +1,1776 @@
+S3
+{
+  "target": "gdgoenkauniversity.com",
+  "timestamp": "2025-07-30 14:13:53",
+  "buckets_found": [],
+  "pass": true,
+  "findings": []
+}
+
+FTP
+{
+  "target": "gdgoenkauniversity.com",
+  "timestamp": "2025-07-30 14:18:23",
+  "ftp_services": [],
+  "pass": true,
+  "findings": []
+}
+
+SHODAN
+{
+  "target": "gdgoenkauniversity.com",
+  "timestamp": "2025-07-30 14:19:23",
+  "shodan_data": {},
+  "pass": true,
+  "findings": [],
+  "ip_address": "13.232.174.21"
+}
+
+DEV_ENDPOINTS
+{
+  "target": "gdgoenkauniversity.com",
+  "timestamp": "2025-07-30 14:19:23",
+  "endpoints_found": [
+    {
+      "url": "https://gdgoenkauniversity.com/debug",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/test",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/admin",
+      "status_code": 200,
+      "content_length": 1465,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/dev",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/development",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/staging",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/phpinfo.php",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/info.php",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/server-info",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/status",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/health",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/healthcheck",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/ping",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/.env",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/config",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/configuration",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/swagger",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/api-docs",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/docs",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/documentation",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/readme",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/README",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/robots.txt",
+      "status_code": 200,
+      "content_length": 138,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/sitemap.xml",
+      "status_code": 200,
+      "content_length": 1396443,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/.git",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/.svn",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/.DS_Store",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/backup",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/backups",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/db",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/database",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/sql",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/logs",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/log",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/temp",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/tmp",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/uploads",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/upload",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/files",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/file",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/private",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/secret",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/hidden",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/console",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/shell",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/cmd",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/terminal",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/phpmyadmin",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/adminer",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/wp-admin",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/wp-login.php",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/administrator",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/management",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/manager",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/control",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/panel",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/dashboard",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/cpanel",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/plesk",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/webmail",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/mail",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/ftp",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/ssh",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/telnet",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/vnc",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    },
+    {
+      "url": "https://gdgoenkauniversity.com/rdp",
+      "status_code": 200,
+      "content_length": 29528,
+      "indicators": [
+        "Admin panel reference"
+      ]
+    }
+  ],
+  "pass": false,
+  "findings": [
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/debug",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/debug",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/test",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/test",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/admin",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/admin",
+        "status_code": 200,
+        "content_length": 1465,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/dev",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/dev",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/development",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/development",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/staging",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/staging",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/phpinfo.php",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/phpinfo.php",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/info.php",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/info.php",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/server-info",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/server-info",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/status",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/status",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/health",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/health",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/healthcheck",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/healthcheck",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/ping",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/ping",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/.env",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/.env",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/config",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/config",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/configuration",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/configuration",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/swagger",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/swagger",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/api-docs",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/api-docs",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/docs",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/docs",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/documentation",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/documentation",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/readme",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/readme",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/README",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/README",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/robots.txt",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/robots.txt",
+        "status_code": 200,
+        "content_length": 138,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/sitemap.xml",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/sitemap.xml",
+        "status_code": 200,
+        "content_length": 1396443,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/.git",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/.git",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/.svn",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/.svn",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/.DS_Store",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/.DS_Store",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/backup",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/backup",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/backups",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/backups",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/db",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/db",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/database",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/database",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/sql",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/sql",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/logs",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/logs",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/log",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/log",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/temp",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/temp",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/tmp",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/tmp",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/uploads",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/uploads",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/upload",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/upload",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/files",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/files",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/file",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/file",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/private",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/private",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/secret",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/secret",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/hidden",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/hidden",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/console",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/console",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/shell",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/shell",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/cmd",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/cmd",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/terminal",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/terminal",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/phpmyadmin",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/phpmyadmin",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/adminer",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/adminer",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/wp-admin",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/wp-admin",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/wp-login.php",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/wp-login.php",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/administrator",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/administrator",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/management",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/management",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/manager",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/manager",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/control",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/control",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/panel",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/panel",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/dashboard",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/dashboard",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/cpanel",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/cpanel",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/plesk",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/plesk",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/webmail",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/webmail",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/mail",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/mail",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/ftp",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/ftp",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/ssh",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/ssh",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/telnet",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/telnet",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/vnc",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/vnc",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    },
+    {
+      "type": "Exposed Dev/Debug Endpoint",
+      "severity": "MEDIUM",
+      "endpoint": "https://gdgoenkauniversity.com/rdp",
+      "details": {
+        "url": "https://gdgoenkauniversity.com/rdp",
+        "status_code": 200,
+        "content_length": 29528,
+        "indicators": [
+          "Admin panel reference"
+        ]
+      }
+    }
+  ]
+}
+
+SUBDOMAIN
+{
+  "target": "gdgoenkauniversity.com",
+  "domain": "gdgoenkauniversity.com",
+  "timestamp": "2025-07-30 14:19:25",
+  "findings": [
+    {
+      "type": "Subdomain Discovery",
+      "severity": "INFO",
+      "description": "Active subdomain discovered: gdgoenkauniversity.com",
+      "subdomain": "gdgoenkauniversity.com",
+      "status": "alive"
+    },
+    {
+      "type": "Subdomain Discovery",
+      "severity": "INFO",
+      "description": "Active subdomain discovered: www.gdgoenkauniversity.com",
+      "subdomain": "www.gdgoenkauniversity.com",
+      "status": "alive"
+    },
+    {
+      "type": "Subdomain Discovery",
+      "severity": "INFO",
+      "description": "Active subdomain discovered: ftp.gdgoenkauniversity.com",
+      "subdomain": "ftp.gdgoenkauniversity.com",
+      "status": "alive"
+    },
+    {
+      "type": "Subdomain Discovery",
+      "severity": "INFO",
+      "description": "Active subdomain discovered: applications.gdgoenkauniversity.com",
+      "subdomain": "applications.gdgoenkauniversity.com",
+      "status": "alive"
+    },
+    {
+      "type": "Subdomain Discovery",
+      "severity": "INFO",
+      "description": "Active subdomain discovered: email.gdgoenkauniversity.com",
+      "subdomain": "email.gdgoenkauniversity.com",
+      "status": "alive"
+    },
+    {
+      "type": "Subdomain Discovery",
+      "severity": "INFO",
+      "description": "Active subdomain discovered: files.gdgoenkauniversity.com",
+      "subdomain": "files.gdgoenkauniversity.com",
+      "status": "alive"
+    },
+    {
+      "type": "Subdomain Discovery",
+      "severity": "INFO",
+      "description": "Active subdomain discovered: alumni.gdgoenkauniversity.com",
+      "subdomain": "alumni.gdgoenkauniversity.com",
+      "status": "alive"
+    },
+    {
+      "type": "Subdomain Discovery",
+      "severity": "INFO",
+      "description": "Active subdomain discovered: www.alumni.gdgoenkauniversity.com",
+      "subdomain": "www.alumni.gdgoenkauniversity.com",
+      "status": "alive"
+    }
+  ],
+  "subdomains": [
+    "alumni.gdgoenkauniversity.com",
+    "applications.gdgoenkauniversity.com",
+    "email.gdgoenkauniversity.com",
+    "files.gdgoenkauniversity.com",
+    "ftp.gdgoenkauniversity.com",
+    "gdgoenkauniversity.com",
+    "imap.gdgoenkauniversity.com",
+    "mail.gdgoenkauniversity.com",
+    "pop.gdgoenkauniversity.com",
+    "smtp.gdgoenkauniversity.com",
+    "www.alumni.gdgoenkauniversity.com",
+    "www.gdgoenkauniversity.com"
+  ],
+  "stats": {
+    "total_found": 12,
+    "alive_subdomains": 8,
+    "techniques_used": [
+      "dns_bruteforce",
+      "certificate_transparency",
+      "search_engines",
+      "zone_transfer"
+    ]
+  }
+}
+
+PORT_SCAN
+{
+  "target": "gdgoenkauniversity.com",
+  "timestamp": "2025-07-30 14:19:52",
+  "findings": [
+    {
+      "type": "Open Port",
+      "severity": "INFO",
+      "port": 80,
+      "service": "apache",
+      "version": "2.4.52",
+      "description": "Open port 80 running apache version 2.4.52",
+      "banner": "<CIMultiDictProxy('Date': 'Wed, 30 Jul 2025 08:51:36 GMT', 'Server': 'Apache/2.4.52 (Ubuntu)', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '29528', 'Content-Type': 'text/h"
+    },
+    {
+      "type": "Open Port",
+      "severity": "INFO",
+      "port": 443,
+      "service": "apache",
+      "version": "2.4.52",
+      "description": "Open port 443 running apache version 2.4.52",
+      "banner": "<CIMultiDictProxy('Date': 'Wed, 30 Jul 2025 08:51:36 GMT', 'Server': 'Apache/2.4.52 (Ubuntu)', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '29528', 'Content-Type': 'text/h"
+    }
+  ],
+  "open_ports": [
+    80,
+    443
+  ],
+  "services": {
+    "80": {
+      "port": 80,
+      "service": "apache",
+      "version": "2.4.52",
+      "banner": "<CIMultiDictProxy('Date': 'Wed, 30 Jul 2025 08:51:36 GMT', 'Server': 'Apache/2.4.52 (Ubuntu)', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '29528', 'Content-Type': 'text/html; charset=UTF-8')>",
+      "ssl_enabled": false,
+      "details": {},
+      "status_code": 200,
+      "server": "Apache/2.4.52 (Ubuntu)"
+    },
+    "443": {
+      "port": 443,
+      "service": "apache",
+      "version": "2.4.52",
+      "banner": "<CIMultiDictProxy('Date': 'Wed, 30 Jul 2025 08:51:36 GMT', 'Server': 'Apache/2.4.52 (Ubuntu)', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '29528', 'Content-Type': 'text/html; charset=UTF-8')>",
+      "ssl_enabled": true,
+      "details": {},
+      "status_code": 200,
+      "server": "Apache/2.4.52 (Ubuntu)"
+    }
+  },
+  "vulnerabilities": [],
+  "stats": {
+    "total_scanned": 1024,
+    "total_open": 2,
+    "services_identified": 2,
+    "vulnerabilities_found": 0
+  }
+}
+
+SSL
+{
+  "target": "gdgoenkauniversity.com",
+  "hostname": "gdgoenkauniversity.com",
+  "port": 443,
+  "timestamp": "2025-07-30 14:21:37",
+  "findings": [
+    {
+      "type": "Weak TLS Protocol",
+      "severity": "HIGH",
+      "description": "Weak TLS/SSL protocol supported: SSLv2"
+    },
+    {
+      "type": "Weak TLS Protocol",
+      "severity": "HIGH",
+      "description": "Weak TLS/SSL protocol supported: SSLv3"
+    },
+    {
+      "type": "POODLE Vulnerability",
+      "severity": "HIGH",
+      "description": "Server supports SSLv3 which is vulnerable to POODLE attack"
+    }
+  ],
+  "certificate": {
+    "subject": {
+      "CN": "www.gdgoenkauniversity.com"
+    },
+    "issuer": {
+      "C": "US",
+      "O": "Certera",
+      "CN": "Certera DV SSL CA"
+    },
+    "version": 2,
+    "serial_number": "293504194911062782166514482563632844340",
+    "not_before": "20241206000000Z",
+    "not_after": "20251206235959Z",
+    "signature_algorithm": "sha384WithRSAEncryption",
+    "has_expired": false,
+    "extensions": [
+      {
+        "name": "authorityKeyIdentifier",
+        "critical": 0,
+        "data": "D3:7A:87:3A:C6:92:59:FF:E2:7D:B2:0D:33:E8:F6:84:FA:A5:70:68"
+      },
+      {
+        "name": "subjectKeyIdentifier",
+        "critical": 0,
+        "data": "0A:CB:AD:E9:78:C3:C2:39:E8:24:70:2A:84:0F:C4:DE:5B:63:AB:CD"
+      },
+      {
+        "name": "keyUsage",
+        "critical": 1,
+        "data": "Digital Signature, Key Encipherment"
+      },
+      {
+        "name": "basicConstraints",
+        "critical": 1,
+        "data": "CA:FALSE"
+      },
+      {
+        "name": "extendedKeyUsage",
+        "critical": 0,
+        "data": "TLS Web Server Authentication, TLS Web Client Authentication"
+      },
+      {
+        "name": "certificatePolicies",
+        "critical": 0,
+        "data": "Policy: 1.3.6.1.4.1.6449.1.2.2.101\n  CPS: https://sectigo.com/CPS\nPolicy: 2.23.140.1.2.1"
+      },
+      {
+        "name": "authorityInfoAccess",
+        "critical": 0,
+        "data": "CA Issuers - URI:http://Certera.crt.sectigo.com/CerteraDVSSLCA.crt\nOCSP - URI:http://Certera.ocsp.sectigo.com"
+      },
+      {
+        "name": "subjectAltName",
+        "critical": 0,
+        "data": "DNS:www.gdgoenkauniversity.com, DNS:gdgoenkauniversity.com"
+      },
+      {
+        "name": "ct_precert_scts",
+        "critical": 0,
+        "data": "Signed Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:\n                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A\n    Timestamp : Dec  6 05:32:54.709 2024 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:44:02:20:32:6E:29:35:CA:39:AF:94:EC:DC:B0:AC:\n                73:29:E0:AA:D6:F4:5D:75:A1:CD:AD:67:E2:5C:37:BD:\n                6D:C9:E8:F1:02:20:1D:01:AF:FE:F4:75:8D:05:C3:9F:\n                36:FC:5F:09:73:68:F6:51:72:4C:CD:88:A2:21:47:4A:\n                C8:C4:3A:DB:AD:DE\nSigned Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:\n                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0\n    Timestamp : Dec  6 05:32:54.713 2024 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:46:02:21:00:FF:63:D3:13:C4:E6:B8:88:A0:FE:F1:\n                3B:21:F7:04:B0:46:5F:4A:A0:A8:D0:ED:6C:30:F3:16:\n                8A:4F:10:54:82:02:21:00:C9:AF:4E:1B:14:5E:70:83:\n                B7:5A:BB:E5:EB:C6:E1:9C:5B:E8:82:C8:D3:20:F4:D3:\n                C5:3A:CE:F8:BD:48:7C:D5\nSigned Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:\n                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A\n    Timestamp : Dec  6 05:32:54.676 2024 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:45:02:21:00:8C:FF:BD:E3:DE:73:D7:ED:3E:D1:C3:\n                2B:D1:00:63:B2:9D:CE:27:E8:E5:C9:18:4F:99:EC:88:\n                1F:3A:1B:DF:6D:02:20:1D:D2:0F:56:00:53:E0:85:90:\n                5A:AD:F0:7C:E8:1B:16:83:7F:9B:0E:84:F4:06:0A:51:\n                64:6E:A7:FC:AE:F4:56"
+      }
+    ]
+  },
+  "tls_config": {
+    "supported_protocols": [
+      "SSLv2",
+      "SSLv3",
+      "TLSv1.2",
+      "TLSv1.3"
+    ],
+    "supported_ciphers": [],
+    "certificate_validation": true
+  },
+  "vulnerabilities": [
+    {
+      "type": "POODLE Vulnerability",
+      "severity": "HIGH",
+      "description": "Server supports SSLv3 which is vulnerable to POODLE attack"
+    }
+  ],
+  "cipher_analysis": {
+    "supported_ciphers": [
+      [
+        "TLS_AES_256_GCM_SHA384",
+        "TLSv1.3",
+        256
+      ]
+    ],
+    "weak_ciphers_found": [],
+    "findings": []
+  },
+  "comprehensive_vulnerabilities": {
+    "findings": [],
+    "vulnerabilities": {
+      "HEARTBLEED": {
+        "vulnerable": false,
+        "description": "OpenSSL Heartbleed vulnerability (CVE-2014-0160)"
+      },
+      "POODLE_SSL": {
+        "vulnerable": false,
+        "description": "POODLE vulnerability in SSLv3 (CVE-2014-3566)"
+      },
+      "POODLE_TLS": {
+        "vulnerable": false,
+        "description": "POODLE vulnerability in TLS (CVE-2014-8730)"
+      },
+      "BEAST": {
+        "vulnerable": false,
+        "description": "BEAST vulnerability in TLS 1.0 (CVE-2011-3389)"
+      },
+      "CRIME": {
+        "vulnerable": false,
+        "description": "CRIME compression vulnerability (CVE-2012-4929)"
+      },
+      "BREACH": {
+        "vulnerable": false,
+        "description": "BREACH compression vulnerability"
+      },
+      "FREAK": {
+        "vulnerable": false,
+        "description": "FREAK vulnerability (CVE-2015-0204)"
+      },
+      "LOGJAM": {
+        "vulnerable": false,
+        "description": "Logjam vulnerability (CVE-2015-4000)"
+      },
+      "DROWN": {
+        "vulnerable": false,
+        "description": "DROWN vulnerability (CVE-2016-0800)"
+      },
+      "SWEET32": {
+        "vulnerable": false,
+        "description": "Sweet32 vulnerability (CVE-2016-2183)"
+      },
+      "ROBOT": {
+        "vulnerable": false,
+        "description": "ROBOT vulnerability (CVE-2017-13099)"
+      }
+    }
+  }
+}
+
+VIRUSTOTAL
+{
+  "target": "gdgoenkauniversity.com",
+  "timestamp": "2025-07-30 14:21:41",
+  "findings": [
+    {
+      "type": "API Error",
+      "severity": "LOW",
+      "description": "VirusTotal API error for IP: 404"
+    }
+  ],
+  "url_analysis": {},
+  "domain_analysis": {
+    "findings": [],
+    "stats": {
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 30,
+      "harmless": 64,
+      "timeout": 0
+    },
+    "ip_address": "_globalsign-domain-verification=5kyOhmJuOcUoiO2aUpsQuJDVHatmXOnBfipuo5GcR_",
+    "whois": "Creation Date: 2008-03-13T12:40:53Z\nDNSSEC: unsigned\nDomain Name: GDGOENKAUNIVERSITY.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS67.DOMAINCONTROL.COM\nName Server: NS68.DOMAINCONTROL.COM\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1421869985_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2025-03-13T12:40:53Z\nUpdated Date: 2022-09-14T17:44:13Z"
+  },
+  "ip_analysis": {
+    "findings": [
+      {
+        "type": "API Error",
+        "severity": "LOW",
+        "description": "VirusTotal API error for IP: 404"
+      }
+    ],
+    "stats": {},
+    "country": null,
+    "as_owner": null
+  }
+}
+

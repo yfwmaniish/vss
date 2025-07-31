@@ -1,0 +1,179 @@
+PORT_SCAN
+{
+  "target": "http://testphp.vulnweb.com",
+  "timestamp": "2025-07-31 01:27:20",
+  "findings": [],
+  "open_ports": [],
+  "services": {},
+  "vulnerabilities": [],
+  "stats": {
+    "total_scanned": 1024,
+    "total_open": 0,
+    "services_identified": 0,
+    "vulnerabilities_found": 0
+  }
+}
+
+SSL
+{
+  "target": "http://testphp.vulnweb.com",
+  "hostname": "testphp.vulnweb.com",
+  "port": 80,
+  "timestamp": "2025-07-31 01:27:20",
+  "findings": [
+    {
+      "type": "Certificate Error",
+      "severity": "HIGH",
+      "description": "Failed to retrieve certificate: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997), [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)"
+    },
+    {
+      "type": "Cipher Analysis Error",
+      "severity": "LOW",
+      "description": "Could not analyze cipher suites: Cannot connect to host testphp.vulnweb.com:80 ssl:default [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)]"
+    },
+    {
+      "type": "Certificate Validation Failed",
+      "severity": "HIGH",
+      "description": "SSL certificate validation failed - may be self-signed or invalid"
+    }
+  ],
+  "certificate": {
+    "error": "Failed to retrieve certificate: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997), [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)"
+  },
+  "tls_config": {
+    "supported_protocols": [],
+    "supported_ciphers": [],
+    "certificate_validation": false
+  },
+  "vulnerabilities": [],
+  "cipher_analysis": {
+    "supported_ciphers": [],
+    "weak_ciphers_found": [],
+    "findings": [
+      {
+        "type": "Cipher Analysis Error",
+        "severity": "LOW",
+        "description": "Could not analyze cipher suites: Cannot connect to host testphp.vulnweb.com:80 ssl:default [[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)]"
+      }
+    ]
+  },
+  "comprehensive_vulnerabilities": {
+    "findings": [],
+    "vulnerabilities": {
+      "HEARTBLEED": {
+        "vulnerable": false,
+        "description": "OpenSSL Heartbleed vulnerability (CVE-2014-0160)"
+      },
+      "POODLE_SSL": {
+        "vulnerable": false,
+        "description": "POODLE vulnerability in SSLv3 (CVE-2014-3566)"
+      },
+      "POODLE_TLS": {
+        "vulnerable": false,
+        "description": "POODLE vulnerability in TLS (CVE-2014-8730)"
+      },
+      "BEAST": {
+        "vulnerable": false,
+        "description": "BEAST vulnerability in TLS 1.0 (CVE-2011-3389)"
+      },
+      "CRIME": {
+        "vulnerable": false,
+        "description": "CRIME compression vulnerability (CVE-2012-4929)"
+      },
+      "BREACH": {
+        "vulnerable": false,
+        "description": "BREACH compression vulnerability"
+      },
+      "FREAK": {
+        "vulnerable": false,
+        "description": "FREAK vulnerability (CVE-2015-0204)"
+      },
+      "LOGJAM": {
+        "vulnerable": false,
+        "description": "Logjam vulnerability (CVE-2015-4000)"
+      },
+      "DROWN": {
+        "vulnerable": false,
+        "description": "DROWN vulnerability (CVE-2016-0800)"
+      },
+      "SWEET32": {
+        "vulnerable": false,
+        "description": "Sweet32 vulnerability (CVE-2016-2183)"
+      },
+      "ROBOT": {
+        "vulnerable": false,
+        "description": "ROBOT vulnerability (CVE-2017-13099)"
+      }
+    }
+  }
+}
+
+DIR_BRUTEFORCE
+{
+  "found_paths": [
+    {
+      "url": "http://testphp.vulnweb.com/clientaccesspolicy.xml",
+      "path": "/clientaccesspolicy.xml",
+      "status": 200,
+      "content_length": "307",
+      "content_type": "text/xml",
+      "server": "nginx/1.19.0"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/crossdomain.xml",
+      "path": "/crossdomain.xml",
+      "status": 200,
+      "content_length": "224",
+      "content_type": "text/xml",
+      "server": "nginx/1.19.0"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/favicon.ico",
+      "path": "/favicon.ico",
+      "status": 200,
+      "content_length": "894",
+      "content_type": "image/x-icon",
+      "server": "nginx/1.19.0"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/style.css",
+      "path": "/style.css",
+      "status": 200,
+      "content_length": "5482",
+      "content_type": "text/css",
+      "server": "nginx/1.19.0"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/.idea",
+      "path": "/.idea",
+      "status": 301,
+      "content_length": "169",
+      "content_type": "text/html",
+      "server": "nginx/1.19.0"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/admin",
+      "path": "/admin",
+      "status": 301,
+      "content_length": "169",
+      "content_type": "text/html",
+      "server": "nginx/1.19.0"
+    },
+    {
+      "url": "http://testphp.vulnweb.com/images",
+      "path": "/images",
+      "status": 301,
+      "content_length": "169",
+      "content_type": "text/html",
+      "server": "nginx/1.19.0"
+    }
+  ],
+  "total_found": 7,
+  "scan_time": 5.53,
+  "total_requests": 152,
+  "paths_tested": 152,
+  "wordlist_used": "wordlists/dev_endpoints.txt",
+  "target_url": "http://testphp.vulnweb.com",
+  "requests_per_second": 27.48
+}
+

@@ -15,6 +15,8 @@ V$$ (Vulnerability Scanner & Security Suite) is a powerful and lightweight Pytho
 - Advanced port scanning with service and vulnerability detection
 - In-depth SSL/TLS analysis
 - Integration with VirusTotal and Have I Been Pwned
+- Directory and file brute forcing with custom wordlists
+- HTTP cookie security analysis (Secure, HttpOnly, SameSite flags)
 - Generate detailed HTML and PDF reports
 
 ## Installation
@@ -45,7 +47,7 @@ $ python vss.py --target example.com --all
 - `--target`: Target to scan (IP, domain, URL, or S3 bucket name)
 - `--jwt`: JWT token to analyze
 - `--all`: Run all available scans (requires target)
-- `--s3`, `--s3-bucket`, `--ftp`, `--dev`, `--shodan`, `--subdomain`, `--port-scan`, `--ssl`, `--virustotal`, `--hibp`: Specific modules to run
+- `--s3`, `--s3-bucket`, `--ftp`, `--dev`, `--shodan`, `--subdomain`, `--port-scan`, `--ssl`, `--virustotal`, `--hibp`, `--dir-bruteforce`, `--cookie-security`: Specific modules to run
 - `--api-key`: Shodan API key (or set `SHODAN_API_KEY` env var)
 - `--wordlist`: Custom wordlist for dev endpoint scanning
 - `--timeout`: Request timeout in seconds

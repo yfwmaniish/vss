@@ -19,6 +19,9 @@ from scanners.advanced_port_scanner import AdvancedPortScanner
 from scanners.ssl_scanner import SSLScanner
 from scanners.virustotal import VirusTotalScanner
 from scanners.hibp_scanner import HaveIBeenPwnedScanner
+from core.dorking import DorkingModule
+from scanners.dir_bruteforce import DirBruteForcer
+from scanners.cookie_scanner import CookieSecurityScanner
 from utils.logger import Logger
 import config
 import asyncio
@@ -85,6 +88,47 @@ async def run_async_scans(args, logger, results):
         #     hibp_results = await hibp_scanner.check_domain(args.target)
         # results['scans']['hibp'] = hibp_results
 
+    # Dorking Scan
+    if args.dorking or args.all:
+        logger.info(f"Starting dorking scan for: {args.target}")
+        comprehensive = args.comprehensive_dorks if hasattr(args, 'comprehensive_dorks') else False
+        stealth = args.stealth if hasattr(args, 'stealth') else False
+        dorking_module = DorkingModule(logger, timeout=args.timeout, comprehensive=comprehensive, stealth=stealth)
+        dorking_results = await dorking_module.scan(args.target)
+        results['scans']['dorking'] = dorking_results
+
+    # Directory Brute Forcing
+    if args.dir_bruteforce or args.all:
+        logger.info(f"Starting directory brute forcing for: {args.target}")
+        # Use custom wordlist if provided, otherwise use default
+        wordlist_path = args.wordlist or 'wordlists/dev_endpoints.txt'
+        
+        # Ensure target is formatted as URL
+        target_url = args.target
+        if not target_url.startswith(('http://', 'https://')):
+            target_url = f"http://{target_url}"
+        
+        dir_bruteforcer = DirBruteForcer(
+            base_url=target_url, 
+            wordlist_path=wordlist_path, 
+            timeout=args.timeout, 
+            threads=args.threads
+        )
+        dir_results = await dir_bruteforcer.run()
+        results['scans']['dir_bruteforce'] = dir_results
+
+    # Cookie Security Analysis
+    if args.cookie_security or args.all:
+        logger.info(f"Starting cookie security analysis for: {args.target}")
+        # Ensure target is formatted as URL
+        target_url = args.target
+        if not target_url.startswith(('http://', 'https://')):
+            target_url = f"http://{target_url}"
+        
+        cookie_scanner = CookieSecurityScanner(timeout=args.timeout)
+        cookie_results = await cookie_scanner.scan(target_url)
+        results['scans']['cookie_security'] = cookie_results
+
 def main():
     parser = argparse.ArgumentParser(
         description="V$$ - Vulnerability Scanner & Security Suite",
@@ -96,8 +140,11 @@ Examples:
   python vss.py -t mybucket --s3-bucket
   python vss.py --jwt "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
   python vss.py -t example.com --shodan --api-key YOUR_KEY
+  python vss.py -t example.com --dorking --output dorking_results.json
   python vss.py -t example.com --all --auto-report
-  python vss.py -t example.com --dev --ssl --auto-report --report-format both
+  python vss.py -t example.com --dev --ssl --dorking --auto-report --report-format both
+  python vss.py -t http://example.com --dir-bruteforce --wordlist custom_dirs.txt
+  python vss.py -t https://example.com --cookie-security --json
         """
     )
     
@@ -132,6 +179,16 @@ Examples:
                        help='Check for data breaches using Have I Been Pwned')
     parser.add_argument('--email',
                        help='Email address to check for breaches (use with --hibp)')
+    parser.add_argument('--dorking', action='store_true',
+                       help='Perform Google dorking to find sensitive information')
+    parser.add_argument('--comprehensive-dorks', action='store_true',
+                       help='Use comprehensive dork database (longer scan, more likely to be rate limited)')
+    parser.add_argument('--stealth', action='store_true',
+                       help='Use advanced anti-detection measures for dorking (very slow)')
+    parser.add_argument('--dir-bruteforce', action='store_true',
+                       help='Perform directory and file brute forcing on web server')
+    parser.add_argument('--cookie-security', action='store_true',
+                       help='Analyze HTTP cookies for security vulnerabilities')
     
     # Configuration
     parser.add_argument('--api-key', 
@@ -225,7 +282,7 @@ Examples:
             
             # Run async scanners if any are requested
             async_scan_needed = any([
-                args.dev, args.subdomain, args.port_scan, args.ssl, args.virustotal, args.hibp, args.all
+                args.dev, args.subdomain, args.port_scan, args.ssl, args.virustotal, args.hibp, args.dorking, args.dir_bruteforce, args.cookie_security, args.all
             ])
             
             if async_scan_needed:
